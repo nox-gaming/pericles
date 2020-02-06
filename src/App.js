@@ -19,10 +19,12 @@ function App() {
     let isDrawing = false;
     let lastX = 0;
     let lastY = 0;
+    let hue = 0;
 
     function draw(e){
       if(!isDrawing) return; // stop the func from running when hey are not moused
       console.log(e)
+      ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
       ctx.beginPath();
       // Start from 0
       ctx.moveTo(lastX, lastY);
@@ -31,6 +33,10 @@ function App() {
       ctx.stroke();
 
       [lastX, lastY] = [e.offsetX, e.offsetY];
+      hue++;
+      if(hue > 360) {
+        hue = 0
+      }
     }
     // https://youtu.be/8ZGAzJ0drl0?t=363
     canvas.current.addEventListener('mousemove', draw)

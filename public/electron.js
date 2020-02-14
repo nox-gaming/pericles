@@ -5,8 +5,8 @@ const isDev = require('electron-is-dev')
 function createWindow () {
   // Cree la fenetre du navigateur.
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1920,
+    height: 1080,
     webPreferences: {
       nodeIntegration: true
     }
@@ -18,7 +18,7 @@ function createWindow () {
     )
 
   // Ouvre les DevTools.
-  win.webContents.openDevTools()
+  // win.webContents.openDevTools()
 }
 
 // This method will be called when Electron has finished

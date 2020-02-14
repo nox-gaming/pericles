@@ -1,3 +1,7 @@
+# Note :
+- [Desktop App with Electron and React: Part 1 - Getting Started with Electron](https://youtu.be/Cdu2O6o2DCg)
+- [Styled-components](https://medium.com/styled-components/styled-components-getting-started-c9818acbcbbd)
+- [Styled Components Typescript React Example - Part 8 - Ben Awad](https://youtu.be/ewVZadu0gzw)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

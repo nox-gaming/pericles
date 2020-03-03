@@ -91,7 +91,7 @@ const Canvas = () => {
       <RedButton>Reset</RedButton>
       <canvas ref={refCanvas} id="draw"></canvas>
       <imageBkg ref={refImage}></imageBkg>
-      <img ref={refImage} src={Anubis} />
+      <img ref={refImage} src={Anubis} alt="map"/>
     </div>
   );
 }

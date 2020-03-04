@@ -2,6 +2,8 @@
   "name": "pericles",
   "version": "0.1.0",
   "private": true,
+  "description": "Plans and strategies in Overwatch",
+  "author": "ugo.arzur@gmail.com",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
@@ -21,7 +23,17 @@
     "react-eject": "react-scripts eject",
     "electron-build": "electron-builder",
     "build": "npm run react-build && npm run electron-build",
-    "start": "concurrently \"cross-env BROWSER=none npm run react-start\" \"wait-on http://localhost:3000 && electron .\""
+    "start": "concurrently \"cross-env BROWSER=none npm run react-start\" \"wait-on http://localhost:3000 && electron .\"",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.ugarz.app",
+    "mac": {
+      "category": "rmpublic.app-category.developer-tools",
+      "icon": "build/icon.icns",
+      "target": "dmg"
+    }
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -42,7 +54,9 @@
     "babel-plugin-styled-components": "^1.10.7",
     "concurrently": "^5.1.0",
     "electron": "^8.0.0",
-    "electron-builder": "^22.3.2",
+    "electron-builder": "^22.3.6",
     "wait-on": "^4.0.0"
-  }
+  },
+  "repository": "git@github.com:nox-gaming/pericles.git",
+  "license": "MIT"
 }
